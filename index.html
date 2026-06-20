@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <title>AI</title>
+  </head>
+  <body>
+    <header class="header container">
+      <a href="/" class="header__logo"
+        ><img
+          src="/src/assets/images/header/logo.svg"
+          alt="Логотип"
+          width="104"
+          height="48"
+      /></a>
+      <nav class="header__nav" data-header-nav>
+        <ul class="header__nav-list">
+          <li><a href="/" class="header__nav-link">Главная</a></li>
+          <li>
+            <a href="#benefits" class="header__nav-link">Преимущества</a>
+          </li>
+        </ul>
+        <button type="button" class="header__btn" data-open-modal>
+          Получить доступ
+        </button>
+      </nav>
+      <button
+        class="header__burger-btn"
+        aria-label="Открыть меню"
+        data-burger-btn
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <div class="overlay" data-body-overlay></div>
+    <main>
+      <section class="hero container">
+        <div class="hero__info">
+          <h1 class="hero__info-title"><span>Нейросеть</span> может все!</h1>
+          <p class="hero__info-description">
+            Мы уже живем в этой удивительной реальности
+          </p>
+          <button type="button" class="hero__info-btn" data-open-modal>
+            Погрузиться в новый мир
+          </button>
+        </div>
+        <div class="hero__img">
+          <img
+            src="/src/assets/images/hero/AI-hero-laptop.svg"
+            alt="Нейросеть на ноутбуке"
+            width="640"
+            height="726"
+          />
+        </div>
+      </section>
+      <section class="benefits container">
+        <div class="benefits__header">
+          <h2 class="benefits__header-title">Преимущества курса</h2>
+          <p class="benefits__header-description">
+            Поможем создать <span>корректный промт</span>, чтобы вы получили
+            максимально корректный вариант под ваши нужды!
+          </p>
+        </div>
+        <div class="benefits__content">
+          <div class="benefits__content-item">
+            <img
+              src="/src/assets/images/benefits/check-list.svg"
+              alt=""
+              width="48"
+              height="48"
+            />
+            <h3 class="benefits__content-item-title">Хотите открыть бизнес?</h3>
+            <p class="benefits__content-item-description">
+              Нейросеть поможет составить бизнес-план, рассчитать расходы,
+              нарисовать логотип, найти место получше и станет вашим главным
+              деловым партнером
+            </p>
+          </div>
+          <div class="benefits__content-item">
+            <img
+              src="/src/assets/images/benefits/suitcase.svg"
+              alt=""
+              width="48"
+              height="48"
+            />
+            <h3 class="benefits__content-item-title">Мечтаете об отпуске?</h3>
+            <p class="benefits__content-item-description">
+              Нейросеть поможет найти место по вашим запросам, выбрать наилучший
+              сезон, собрать чемодан, подыскать где остановиться и сделать ваш
+              отпуск незабываемым
+            </p>
+          </div>
+          <div class="benefits__content-item">
+            <img
+              src="/src/assets/images/benefits/goal.svg"
+              alt=""
+              width="48"
+              height="48"
+            />
+            <h3 class="benefits__content-item-title">
+              Вы студент и нуждаетесь в помощи в учебе?
+            </h3>
+            <p class="benefits__content-item-description">
+              Нет проблем! Нейросеть — ваш лучший друг, который поможет написать
+              курсовую, решить сложный тест и подготовиться к экзаменам
+            </p>
+          </div>
+          <div class="benefits__content-item">
+            <img
+              src="/src/assets/images/benefits/mental-health.svg"
+              alt=""
+              width="48"
+              height="48"
+            />
+            <h3 class="benefits__content-item-title">
+              Интересует здоровый образ жизни?
+            </h3>
+            <p class="benefits__content-item-description">
+              Нейросеть поделится советами по сбалансированному питанию,
+              безопасным тренировкам и поддержке мотивации.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <dialog class="modal" id="modal" data-modal>
+      <div class="modal__content">
+        <button type="button" class="modal__close-btn" data-close-modal>
+          <img
+            src="/src/assets/images/modal/modal-close-btn.svg"
+            alt="Закрыть"
+          />
+        </button>
+        <h3 class="modal__title">Овладей нейросетями!</h3>
+        <span class="modal__info">Получи в подарок доступ ко всем курсам</span>
+        <img src="/src/assets/images/modal/gifts.svg" alt="" />
+        <form class="form" data-modal-form novalidate>
+          <input
+            class="form__field"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Введите e-mail"
+            required
+            data-modal-input
+          />
+          <span class="form__error" id="emailError" data-modal-error
+            >Ошибка</span
+          >
+          <button type="submit" class="form__submit" id="form__submit-btn">
+            Получить доступ
+          </button>
+        </form>
+      </div>
+    </dialog>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

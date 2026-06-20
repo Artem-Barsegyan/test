@@ -1,0 +1,120 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 96px;
+}
+
+.hero__info {
+  width: 100%;
+  max-width: 688px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__info-title {
+  margin-bottom: 30px;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 90%;
+  letter-spacing: 2%;
+
+  span {
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 500;
+    line-height: 90%;
+    letter-spacing: 2%;
+    background-image: linear-gradient(
+      90deg,
+      var(--color-pink-A3, rgba(247, 6, 163, 1)) 0%,
+      rgba(89.96, 114.87, 239.43, 1) 44%,
+      var(--color-light-blue, rgba(129, 243, 248, 1)) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 16px;
+  }
+}
+
+.hero__info-description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 110%;
+  margin-bottom: 72px;
+}
+
+.hero__info-btn {
+  background-color: var(--color-pink-78);
+  padding: 18px 24px;
+  border-radius: 18px;
+
+  &:hover {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    box-shadow: 0px 0px 30px 2px var(--color-pink-A3, rgba(247, 6, 163, 1));
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 1357px) {
+  .hero {
+    justify-content: center;
+  }
+
+  .hero__info-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 694px) {
+  .hero__info {
+    max-width: 500px;
+    align-items: center;
+  }
+
+  .hero__info-title {
+    font-size: 50px;
+
+    span {
+      font-size: 90px;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .hero__info {
+    max-width: 400px;
+    align-items: center;
+  }
+
+  .hero__info-title {
+    font-size: 40px;
+
+    span {
+      font-size: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .hero__info {
+    max-width: 300px;
+    align-items: center;
+  }
+
+  .hero__info-title {
+    font-size: 20px;
+
+    span {
+      font-size: 50px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 103 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.000000" height="48.000000" fill="none" customFrame="#000000">
+	<defs>
+		<g id="pixso_custom_effect_0">
+			<effect x="-12.000000" y="-17.000000" visibility="visible" fill="rgb(13,12,18)" style="mix-blend-mode:plus-darker" fill-opacity="0.300000012" effectType="innerShadow" stdDeviation="17.1000004" radius="0" />
+			<effect x="3.000000" y="4.000000" visibility="visible" fill="rgb(255,255,255)" style="mix-blend-mode:plus-lighter" fill-opacity="0.25" effectType="innerShadow" stdDeviation="10.3000002" radius="0" />
+		</g>
+		<filter id="filter_0" width="42.000000" height="42.000000" x="0.000000" y="0.000000" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_0)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feOffset dx="-12.000000" dy="-17.000000" in="SourceAlpha" />
+			<feGaussianBlur stdDeviation="5.70000029" />
+			<feComposite k2="-1" k3="1" in2="SourceAlpha" operator="arithmetic" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0.0509804 0 0 0 0 0.0470588 0 0 0 0 0.0705882 0 0 0 0.3 0 " />
+			<feBlend result="effect_innerShadow_1" in2="shape" mode="normal" />
+			<feOffset dx="3.000000" dy="4.000000" in="SourceAlpha" />
+			<feGaussianBlur stdDeviation="3.4333334" />
+			<feComposite k2="-1" k3="1" in2="SourceAlpha" operator="arithmetic" />
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0 " />
+			<feBlend result="effect_innerShadow_2" in2="effect_innerShadow_1" mode="normal" />
+		</filter>
+		<radialGradient id="paint_radial_0" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(36.5806,-16.2581,16.2581,36.5807,16.9355,8.80645)">
+			<stop stop-color="rgb(247,6,163)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(90,115,239)" offset="1" stop-opacity="1" />
+		</radialGradient>
+	</defs>
+	<rect id="Frame 427320349" width="103.000000" height="48.000000" x="0.000000" y="0.000000" />
+	<g filter="url(#filter_0)">
+		<circle id="Ellipse 48" cx="21" cy="21" r="21" fill="url(#paint_radial_0)" />
+	</g>
+	<path id="AI" d="M74.432 4.684L78.084 4.684L92.076 37.2L88.512 37.2L83.804 26.244L68.668 26.244L63.916 37.2L60.484 37.2L74.432 4.684ZM82.528 23.296L76.28 8.38L69.9 23.296L82.528 23.296ZM95.9143 4.684L99.1703 4.684L99.1703 37.2L95.9143 37.2L95.9143 4.684Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+</svg>

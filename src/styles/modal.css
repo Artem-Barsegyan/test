@@ -1,0 +1,126 @@
+.modal {
+  background: transparent;
+  border: none;
+
+  &::backdrop {
+    background: rgba(12, 13, 18, 0.3);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+}
+
+.modal__content {
+  background-color: var(--color-gray-24);
+  color: var(--color-white);
+  border-radius: 24px;
+  border: 3px solid var(--color-gray-2C);
+  padding: 60px;
+  padding-top: 84px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__close-btn {
+  position: absolute;
+  right: 60px;
+  top: 30px;
+}
+
+.modal__title {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 110%;
+  margin-bottom: 12px;
+}
+
+.modal__info {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 110%;
+  margin-bottom: 30px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field {
+  background-color: var(--color-gray-2C);
+  border-radius: 18px;
+  padding-block: 18px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 110%;
+  margin-bottom: 30px;
+  padding-inline: 15px;
+  position: relative;
+
+  &::placeholder {
+    text-align: center;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border: 1px solid var(--color-light-blue);
+
+    &::placeholder {
+      opacity: 1;
+      color: var(--color-white);
+    }
+  }
+
+  &.error {
+    border: 1px solid var(--color-pink-A3);
+    color: var(--color-pink-A3);
+  }
+}
+
+.form__error {
+  display: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 110%;
+  color: var(--color-pink-A3);
+  position: absolute;
+  bottom: 124px;
+  left: 45%;
+
+  &.show {
+    display: block;
+  }
+}
+
+.form__submit {
+  padding-block: 18px;
+  background-color: var(--color-pink-78);
+  border-radius: 18px;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .modal__close-btn {
+    right: 34px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .modal__close-btn {
+    right: 34px;
+  }
+
+  .modal__title {
+    text-align: center;
+  }
+
+  .modal__info {
+    text-align: center;
+  }
+}
